@@ -3,9 +3,65 @@
     <head>
         <!--styling , css , js favicon title etc-->
         <title>Nath Careers</title>
+        <style>
+            h1{
+                font-size:40px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(50,50,50);
+                text-align: center;
+            }
+
+            #banner {
+                width: 100%;
+                height: 360px;
+                object-fit: cover;
+            }
+            h2{
+                font-family: Roboto;
+                font-size:  32px;
+                color:rgb(100,100,100);
+                text-align: center;
+                font-weight: normal;
+            }
+
+            p{
+                font-family: Roboto;
+                color: rgb(80,80,80)
+            }
+
+            #container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px; /* For demonstration purposes */
+            }
+            .centered-content img {
+            width: auto; /* Allow the image to resize proportionally */
+            max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+            max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+            }
+        </style>
+
     </head>
 
     <body>
-        <p>Hello There, you will learn about the job openings at nath</p>
+        <div id="container">
+            <h1>Nath Careers</h1>
+            <h2>About Nath</h2>
+                <div class="image-container">
+                    <div class="centered-content" >
+                        <img src="static\images\banner.png" alt="Banner Image">
+                    </div>
+                </div>
+            <p>
+                It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let no one be born. Unless they are blinded by lust, they do not come out, they are in fault who abandon their duties, the soul softens, that is toils
+            </p>
+            <h2>Open Positions</h2>
+            <p>TODO - Show the jobs here.</p>
+            <div style="text-align: center;">
+                <button id="contactbutton">Contact Us</button>
+                <p style="font-size: small;">Copyright 2023, Nath</p>
+            </div>
+        </div>
     </body>
 </html>
