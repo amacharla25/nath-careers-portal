@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -31,6 +31,10 @@ JOBS = [
 @app.route("/") #route is the part of the url - its a decorator
 def hello():
     return render_template("home.html", jobs= JOBS, company_name= 'NOSPL')
+
+@app.route("/api/jobs-json")
+def jobs_list():
+    return jsonify(JOBS)
 
 if __name__ == "__main__":
     app.run(host= '0.0.0.0', debug=True)
