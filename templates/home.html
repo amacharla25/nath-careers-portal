@@ -47,7 +47,7 @@
     <body>
         <div id="container">
             <h1>Nath Careers</h1>
-            <h2>About Nath</h2>
+            <h2>About {{company_name}}</h2>
                 <div class="image-container">
                     <div class="centered-content" >
                         <img src="static\images\banner.png" alt="Banner Image">
@@ -57,7 +57,12 @@
                 It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the rebuke, in the pleasure he wants to be a hair from the pain, let no one be born. Unless they are blinded by lust, they do not come out, they are in fault who abandon their duties, the soul softens, that is toils
             </p>
             <h2>Open Positions</h2>
-            <p>TODO - Show the jobs here.</p>
+            <div>
+                {% for job in jobs %}
+                    {% include "job_item.html" %}
+                {%endfor%}
+            </div>
+
             <div style="text-align: center;">
                 <button id="contactbutton">Contact Us</button>
                 <p style="font-size: small;">Copyright 2023, Nath</p>
